@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis Músicos Favoritos</title>
+    <meta name="description" content="Proyecto final de músicos favoritos para la asignatura de Desarrollo Web.">
+    <title>Music Vibes | Final</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <style>
         ::-webkit-scrollbar { width: 10px; }
         ::-webkit-scrollbar-track { background: #121212; }
         ::-webkit-scrollbar-thumb { background: #1db954; border-radius: 5px; }
         body { background-color: #121212; color: #ffffff; font-family: 'Montserrat', sans-serif; margin: 0; }
-        /* Efecto Nav */
-        nav { background: #1db954; padding: 20px; text-align: center; font-weight: bold; transition: 0.4s ease; cursor: pointer; border-bottom: 2px solid transparent; }
-        nav:hover { background: #121212; color: #1db954; border-bottom: 2px solid #1db954; letter-spacing: 5px; }
+        nav { background: #1db954; padding: 20px; text-align: center; font-weight: bold; }
         h1 { font-family: 'Playfair Display', serif; text-align: center; margin: 40px 0; color: #1db954; }
         .music-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; padding: 40px; }
         .artist-card { background: #181818; border-radius: 12px; overflow: hidden; transition: 0.3s; border: 1px solid #282828; }
-        .artist-card:hover { transform: scale(1.03); border-color: #1db954; }
+        .artist-card:hover { transform: scale(1.03); border-color: #1db954; box-shadow: 0 0 20px rgba(29, 185, 84, 0.4); }
         .artist-card img { width: 100%; height: 350px; object-fit: cover; }
         .artist-info { padding: 25px; }
         .artist-info h2 { margin: 0 0 10px; color: #1db954; }
@@ -25,15 +24,17 @@
     </style>
 </head>
 <body>
-    <nav>MUSIC VIBES</nav>
-    <h1>ARTISTAS DESTACADOS</h1>
-    <div class="music-grid">
-        <div class="artist-card"><img src="https://www.billboard.com/wp-content/uploads/2023/10/bad-bunny-press-2023-cr-Eric-Rojas-billboard-1548.jpg" alt="Bad Bunny"> <div class="artist-info"><h2>Bad Bunny</h2><span class="album">Álbum: Un Verano Sin Ti</span><p>Ícono global de la música urbana.</p></div></div>
-        <div class="artist-card"><img src="https://hips.hearstapps.com/hmg-prod/images/karol-g-gettyimages-1483864197-64478f772e27b.jpg" alt="Karol G"> <div class="artist-info"><h2>Karol G</h2><span class="album">Álbum: Mañana Será Bonito</span><p>Líder femenina del reguetón.</p></div></div>
-        <div class="artist-card"><img src="https://img.vixdata.io/wm/6146059e9c8f8b001275d862" alt="Feid"> <div class="artist-info"><h2>Feid</h2><span class="album">Álbum: Feliz Cumpleaños Ferxxo</span><p>Innovador del sonido colombiano.</p></div></div>
-        <div class="artist-card"><img src="https://media.vogue.es/photos/64105267a57a898402c449f1/1:1/w_2000,h_2000,c_limit/GettyImages-1461474921.jpg" alt="Shakira"> <div class="artist-info"><h2>Shakira</h2><span class="album">Álbum: Pies Descalzos</span><p>La reina del pop latino.</p></div></div>
-        <div class="artist-card"><img src="https://img.vixdata.io/wm/609062d398622c0012d9016e" alt="J Balvin"> <div class="artist-info"><h2>J Balvin</h2><span class="album">Álbum: Colores</span><p>Referente mundial de Medellín.</p></div></div>
-    </div>
-    <footer>&copy; 2026 Music Vibes - Proyecto Interactivo</footer>
+    <nav>MUSIC VIBES | CUC 2026</nav>
+    <main>
+        <h1>ARTISTAS DESTACADOS</h1>
+        <div class="music-grid">
+            <div class="artist-card"><img src="https://www.billboard.com/wp-content/uploads/2023/10/bad-bunny-press-2023-cr-Eric-Rojas-billboard-1548.jpg" alt="Bad Bunny"> <div class="artist-info"><h2>Bad Bunny</h2><span class="album">Álbum: Un Verano Sin Ti</span><p>Ícono global de la música urbana.</p></div></div>
+            <div class="artist-card"><img src="https://hips.hearstapps.com/hmg-prod/images/karol-g-gettyimages-1483864197-64478f772e27b.jpg" alt="Karol G"> <div class="artist-info"><h2>Karol G</h2><span class="album">Álbum: Mañana Será Bonito</span><p>Líder femenina del reguetón.</p></div></div>
+            <div class="artist-card"><img src="https://img.vixdata.io/wm/6146059e9c8f8b001275d862" alt="Feid"> <div class="artist-info"><h2>Feid</h2><span class="album">Álbum: Feliz Cumpleaños Ferxxo</span><p>Innovador del sonido colombiano.</p></div></div>
+            <div class="artist-card"><img src="https://media.vogue.es/photos/64105267a57a898402c449f1/1:1/w_2000,h_2000,c_limit/GettyImages-1461474921.jpg" alt="Shakira"> <div class="artist-info"><h2>Shakira</h2><span class="album">Álbum: Pies Descalzos</span><p>La reina del pop latino.</p></div></div>
+            <div class="artist-card"><img src="https://img.vixdata.io/wm/609062d398622c0012d9016e" alt="J Balvin"> <div class="artist-info"><h2>J Balvin</h2><span class="album">Álbum: Colores</span><p>Referente mundial de Medellín.</p></div></div>
+        </div>
+    </main>
+    <footer>&copy; 2026 Emanuel - Universidad de la Costa</footer>
 </body>
 </html>
